@@ -19,14 +19,14 @@
 
 .placeholder-text {
   position: absolute;
-  bottom: 20%;
-  left: calc(50% - 150px);
-  width: 300px;
+  bottom: 30%;
+  left: calc(50% - 250px);
+  width: 500px;
   z-index: 1;
   text-align: center;
   color: white;
-  padding-bottom: 40px;
-  background-color: rgba(0,0,0,0.2);
+  padding: 0 30px 40px;
+  background-color: rgba(97,187,224,0.5);
 }
 
 h1 {
@@ -49,5 +49,10 @@ p {
 
 span.fa {
   font-size: 28px;
+  margin: 10px 0 20px;
+}
+
+img.hm-mark {
+  width: 50px;
   margin: 10px 0 20px;
 }
