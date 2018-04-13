@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fullscreen-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.placeholder-text {
+  position: absolute;
+  bottom: 20%;
+  left: calc(50% - 150px);
+  width: 300px;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding-bottom: 40px;
+  background-color: rgba(0,0,0,0.2);
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: lighter;
+}
+
+h1 small {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: white;
+  line-height: 5;
+}
+
+p {
+  font-family: 'Playfair Display', serif;
+  font-weight: lighter;
+}
+
+span.fa {
+  font-size: 28px;
+  margin: 10px 0 20px;
+}
