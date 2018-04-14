@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Big Screen Map</title>
+	<meta name="description" content="Humble Mountain Big Screen Map">
+	<meta name="author" content="Orbitist">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+
+	<!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/a118b04c82.js"></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Mapbox -->
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/bigScreen.css">
+
+</head>
+<body>
+
+<div class="fullscreen">
+
+	<div id='map' style='width: 100%; height: 100%;'></div>
+
+</div>
+
+<audio autoplay loop id="music">
+  <source src="audio/thinking.mp3">
+</audio>
+
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1Ijoib3JiaXRpc3QiLCJhIjoiYnpUTnJBdyJ9.uxgaJ0R9ZNsCcEnPNfo2ag';
+	var map = new mapboxgl.Map({
+	    container: 'map',
+	    style: 'mapbox://styles/orbitist/ciqvfa6ee0000djno88tuq1oj'
+	});
+
+	map.on('load', function () {
+		map.addLayer({
+	        "id": "points",
+	        "type": "symbol",
+	        "source": {
+	            "type": "geojson",
+	            "data": {
+	                "type": "FeatureCollection",
+	                "features": [{
+	                    "type": "Feature",
+	                    "geometry": {
+	                        "type": "Point",
+	                        "coordinates": [-84.045108,10.281622]
+	                    },
+	                    "properties": {
+	                        "title": "Rara Avis",
+	                        "icon": "star"
+	                    }
+	                }]
+	            }
+	        },
+	        "layout": {
+	            "icon-image": "{icon}-15",
+	            "text-field": "{title}",
+	            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+	            "text-offset": [0, 0.6],
+	            "text-anchor": "top",
+							"text-size": {
+								"stops": [
+									[5, 0],
+									[7, 16],
+									[9, 20]
+								]
+							}
+	        },
+		      "paint": {
+		        "text-halo-width": 1,
+		        "text-halo-color": "white"
+		      }
+	    });
+		});
+
+	window.onload = function() {
+		map.flyTo({
+			center: [-84.045108,10.281622],
+			zoom: 11,
+			speed: 0.1
+		});
+	}
+</script>
+
+	<!-- Bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+	<!-- Orbitist Custom scripts -->
+	<script src="js/scripts.js"></script>
+
+</body>
+</html>
