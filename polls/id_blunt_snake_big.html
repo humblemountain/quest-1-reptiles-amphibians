@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Poll Answer</title>
-	<meta name="description" content="Humble Mountain Poll Answer">
+	<title>Large Screen Poll</title>
+	<meta name="description" content="Humble Mountain Large Screen Poll">
 	<meta name="author" content="Orbitist">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
 
@@ -18,24 +18,35 @@
 
 </head>
 <body>
-
-	<div class="modal choice-b" id="choice-b" tabindex="-1" role="dialog" aria-labelledby="choice-b" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Answer</h5>
-				</div>
-				<div class="modal-body">
-					<img class="card-img-top" src="img/maps/central-america.jpg" alt="Card image cap">
-					<p>Costa Rica is located in Central America.</p>
-				</div>
-			</div>
-		</div>
+<div class="container">
+	<h1>Can you identify a Blunt Headed Tree Snake?</h1>
+<div class="row">
+<div class="col-md-6">
+	<div class="card choice-a">
+	  <img class="card-img-top" src="img/snakes/blunt_head.jpg" alt="Card image cap">
 	</div>
+</div>
+<div class="col-md-6">
+	<div class="card choice-b">
+	  <img class="card-img-top" src="img/snakes/eyelash_viper.jpg" alt="Card image cap">
+	</div>
+</div>
+<div class="col-md-6">
+	<div class="card choice-c">
+	  <img class="card-img-top" src="img/snakes/parrot_snake.jpg" alt="Card image cap">
+	</div>
+</div>
+<div class="col-md-6">
+	<div class="card choice-d">
+	  <img class="card-img-top" src="img/snakes/vine_snake.jpg" alt="Card image cap">
+	</div>
+</div>
+</div>
+</div>
 
-	<audio autoplay id="music">
-	  <source src="audio/poll_finish.mp3">
-	</audio>
+<audio autoplay loop id="music">
+  <source src="audio/poll_music.mp3">
+</audio>
 
 	<!-- Orbitist Custom scripts -->
 	<script src="js/scripts.js"></script>
@@ -44,12 +55,6 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-
-	<script>
-	$(window).on('load',function(){
-		$('#choice-b').modal('show');
-	});
-	</script>
 
 </body>
 </html>
