@@ -26,8 +26,20 @@ h1 {
 .modal-backdrop {
   display: none;
 }
-
-.modal-body {padding: none;}
+.modal-content {
+  border-radius: 30px;
+}
+.modal-title {
+  margin: auto;
+}
+.modal-body {
+  padding: 0px 0px 18px 0px;
+  text-align: center;
+}
+.modal-body img {
+  border-radius: 0;
+  margin-bottom: 30px;
+}
 
 .card {
   margin: 10px auto;
