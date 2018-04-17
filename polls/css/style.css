@@ -27,11 +27,16 @@ h1 {
 }
 .modal-content {
   border-radius: 30px;
+  border: none;
   background: linear-gradient(to right, #87e0fd 0%,#53cbf1 40%,#05abe0 100%);
   color: white;
 }
-.modal-header{
+.modal-header {
   border-bottom: none;
+}
+.modal-header .close {
+  padding: 0;
+  margin: 0;
 }
 .modal-title {
   margin: auto;
@@ -104,5 +109,5 @@ h1 {
   border-color: rgba(170,108,57,0.8);
 }
 .modal.choice-d {
-  background-color: rgba(170,108,57,0,9);
+  background-color: rgba(170,108,57,0.9);
 }
