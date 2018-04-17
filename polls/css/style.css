@@ -69,6 +69,9 @@ h1 {
   background-color: rgba(170,57,57,0.8);
   border-color: rgba(170,57,57,0.8);
 }
+.modal.choice-a {
+  background-color: rgba(170,57,57,0.9);
+}
 
 .choice-b {
   background-color: rgba(45,136,45,0.6);
@@ -76,6 +79,9 @@ h1 {
 .choice-b .btn-primary {
   background-color: rgba(45,136,45,0.8);
   border-color: rgba(45,136,45,0.8);
+}
+.modal.choice-b {
+  background-color: rgba(45,136,45,0.9);
 }
 
 .choice-c {
@@ -85,6 +91,10 @@ h1 {
   background-color: rgba(34,102,102,0.8);
   border-color: rgba(34,102,102,0.8);
 }
+.modal.choice-c {
+  background-color: rgba(34,102,102,0.9);
+}
+
 
 .choice-d {
   background-color: rgba(170,108,57,0.6);
@@ -92,4 +102,7 @@ h1 {
 .choice-d .btn-primary {
   background-color: rgba(170,108,57,0.8);
   border-color: rgba(170,108,57,0.8);
+}
+.modal.choice-d {
+  background-color: rgba(170,108,57,0,9);
 }
