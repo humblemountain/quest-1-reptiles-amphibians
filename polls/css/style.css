@@ -27,6 +27,11 @@ h1 {
 }
 .modal-content {
   border-radius: 30px;
+  background: linear-gradient(to right, #87e0fd 0%,#53cbf1 40%,#05abe0 100%);
+  color: white;
+}
+.modal-header{
+  border-bottom: none;
 }
 .modal-title {
   margin: auto;
