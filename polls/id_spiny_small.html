@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Small Screen Poll</title>
+	<meta name="description" content="Humble Mountain Small Screen Poll">
+	<meta name="author" content="Orbitist">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/a118b04c82.js"></script>
+
+  <!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="fullscreen-scroll">
+	<div class="card choice-a" data-toggle="modal" data-target="#choice-a">
+	  <img class="card-img-top" src="img/turtles/snapping.jpg" alt="Card image cap">
+	  <div class="card-body">
+			<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#choice-a">CHOOSE</a>
+	  </div>
+	</div>
+	<div class="card choice-b" data-toggle="modal" data-target="#choice-b">
+	  <img class="card-img-top" src="img/turtles/tree.jpg" alt="Card image cap">
+	  <div class="card-body">
+			<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#choice-b">CHOOSE</a>
+	  </div>
+	</div>
+	<div class="card choice-c" data-toggle="modal" data-target="#choice-c">
+	  <img class="card-img-top" src="img/turtles/painted.jpg" alt="Card image cap">
+	  <div class="card-body">
+			<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#choice-c">CHOOSE</a>
+	  </div>
+	</div>
+	<div class="card choice-d" data-toggle="modal" data-target="#choice-d">
+	  <img class="card-img-top" src="img/turtles/spiny.jpg" alt="Card image cap">
+	  <div class="card-body">
+			<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#choice-d">CHOOSE</a>
+	  </div>
+	</div>
+
+
+	<!-- Modals -->
+	<div class="modal fade choice-a" id="choice-a" tabindex="-1" role="dialog" aria-labelledby="choice-a" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+					<h5 class="modal-title">Your Choice</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <img class="card-img-top" src="img/turtles/snapping.jpg" alt="Card image cap">
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade choice-b" id="choice-b" tabindex="-1" role="dialog" aria-labelledby="choice-b" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Your Choice</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<img class="card-img-top" src="img/turtles/tree.jpg" alt="Card image cap">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade choice-c" id="choice-c" tabindex="-1" role="dialog" aria-labelledby="choice-c" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Your Choice</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<img class="card-img-top" src="img/turtles/painted.jpg" alt="Card image cap">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade choice-d" id="choice-d" tabindex="-1" role="dialog" aria-labelledby="choice-d" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Your Choice</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<img class="card-img-top" src="img/turtles/spiny.jpg" alt="Card image cap">
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!-- fullscreen-scroll -->
+
+
+	<!-- Orbitist Custom scripts -->
+	<script src="js/scripts.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+</body>
+</html>
