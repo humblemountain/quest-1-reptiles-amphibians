@@ -42,8 +42,8 @@
 	var map = new mapboxgl.Map({
 	    container: 'map',
 	    style: 'mapbox://styles/orbitist/ciqvfa6ee0000djno88tuq1oj',
-			center: [-0,0],
-			zoom: 1
+			center: [-84.045108,10.281622],
+			zoom: 11
 	});
 
 	map.on('load', function () {
@@ -101,9 +101,9 @@
 
 	window.onload = function() {
 		map.flyTo({
-			center: [-79.2395198,42.0945759],
-			zoom: 13,
-			speed: 0.2
+			center: [0,0],
+			zoom: 1,
+			speed: 0.15
 		});
 	}
 </script>
