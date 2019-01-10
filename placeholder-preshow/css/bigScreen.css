@@ -19,13 +19,13 @@
 
 .placeholder-text {
   position: absolute;
-  bottom: 30%;
+  top: 30%;
   left: calc(50% - 250px);
   width: 500px;
   z-index: 1;
   text-align: center;
   color: white;
-  padding: 0 30px 40px;
+  padding: 0 30px 10px;
   background-color: rgba(97,187,224,0.5);
 }
 
